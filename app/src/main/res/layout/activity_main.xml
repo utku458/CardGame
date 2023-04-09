@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3E9A2E"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/PcCardOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PcCardTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PcCardTwo"
+        app:layout_constraintTop_toTopOf="@+id/PcCardTwo"
+        app:srcCompat="@drawable/deck_1" />
+
+    <ImageView
+        android:id="@+id/PcCardFour"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PcCardThree"
+        app:layout_constraintEnd_toStartOf="@+id/PcCardThree"
+        app:layout_constraintStart_toEndOf="@+id/PcCardFive"
+        app:layout_constraintTop_toTopOf="@+id/PcCardThree"
+        app:srcCompat="@drawable/deck_1" />
+
+    <ImageView
+        android:id="@+id/PcCardTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PcCardThree"
+        app:layout_constraintEnd_toStartOf="@+id/PcCardOne"
+        app:layout_constraintStart_toEndOf="@+id/PcCardThree"
+        app:layout_constraintTop_toTopOf="@+id/PcCardThree"
+        app:srcCompat="@drawable/deck_1" />
+
+    <ImageView
+        android:id="@+id/PcCardFive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/PcCardFour"
+        app:layout_constraintEnd_toStartOf="@+id/PcCardFour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PcCardFour"
+        app:srcCompat="@drawable/deck_1" />
+
+    <ImageView
+        android:id="@+id/PcCardThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toBottomOf="@+id/genelbilgi"
+        app:layout_constraintEnd_toStartOf="@+id/PcCardTwo"
+        app:layout_constraintStart_toEndOf="@+id/PcCardFour"
+        app:layout_constraintTop_toTopOf="@+id/pcdurbtn"
+        app:srcCompat="@drawable/deck_1" />
+
+    <ImageView
+        android:id="@+id/playerCardOne"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCardTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playerCardTwo"
+        app:layout_constraintTop_toTopOf="@+id/playerCardTwo"
+        app:srcCompat="@drawable/deck_2" />
+
+    <ImageView
+        android:id="@+id/playerCardFive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCardFour"
+        app:layout_constraintEnd_toStartOf="@+id/playerCardFour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/playerCardFour"
+        app:srcCompat="@drawable/deck_2" />
+
+    <ImageView
+        android:id="@+id/playerCardThree"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/durbtn"
+        app:layout_constraintEnd_toStartOf="@+id/playerCardTwo"
+        app:layout_constraintStart_toEndOf="@+id/playerCardFour"
+        app:layout_constraintTop_toTopOf="@+id/playerScore"
+        app:srcCompat="@drawable/deck_2" />
+
+    <ImageView
+        android:id="@+id/playerCardFour"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCardThree"
+        app:layout_constraintEnd_toStartOf="@+id/playerCardThree"
+        app:layout_constraintStart_toEndOf="@+id/playerCardFive"
+        app:layout_constraintTop_toTopOf="@+id/playerCardThree"
+        app:srcCompat="@drawable/deck_2" />
+
+    <ImageView
+        android:id="@+id/playerCardTwo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/playerCardThree"
+        app:layout_constraintEnd_toStartOf="@+id/playerCardOne"
+        app:layout_constraintStart_toEndOf="@+id/playerCardThree"
+        app:layout_constraintTop_toTopOf="@+id/playerCardThree"
+        app:srcCompat="@drawable/deck_2" />
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="267dp"
+        android:text="0"
+        android:textColor="#54CDEC"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playerCardOne" />
+
+    <TextView
+        android:id="@+id/PcScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="244dp"
+        android:text="0"
+        android:textColor="#601002"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/PcCardFive" />
+
+    <TextView
+        android:id="@+id/durbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="40dp"
+        android:width="120dp"
+        android:background="@drawable/defaultbutton"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Dur"
+        android:textColor="#54CDEC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playerCardThree"
+        app:layout_constraintStart_toStartOf="@+id/playerCardFive" />
+
+    <TextView
+        android:id="@+id/kardcekbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="40dp"
+        android:width="120dp"
+        android:background="@drawable/defaultbutton"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Kart Çek"
+        android:textColor="#54CDEC"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/playerCardOne"
+        app:layout_constraintStart_toEndOf="@+id/durbtn" />
+
+    <TextView
+        android:id="@+id/genelbilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/playerCardThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/pccekbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="44dp"
+        android:width="120dp"
+        android:background="@drawable/defaultbuttonpc"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Kart Çek"
+        android:textColor="#853218"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pcdurbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:width="120dp"
+        android:background="@drawable/defaultbuttonpc"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Dur"
+        android:textColor="#853218"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/durbtn"
+        app:layout_constraintStart_toStartOf="@+id/durbtn"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
